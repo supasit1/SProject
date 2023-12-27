@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Intelligent Vegetable Plot</title>
+    <script src="app.js" type="module"></script>
+</head>
+<body>
+    <div>
+        <h1>The Intelligent Vegetable Plot</h1>
+        <h3>ESP32-CAM Live Stream</h3>
+        <p id="videoUrl"></p>
+        <a href="http://192.168.100.60" target="_blank">VDO</a>
+        <video id="liveVideo" controls autoplay width="640" height="360">
+            <source src="http://192.168.100.60" type="application/x-mpegURL">
+            Your browser does not support the video tag.
+        </video>
+        <h3>Humidity = <span id="humidity"></span></h3>
+        <h3>Temperature = <span id="temperature"></span></h3>
+        <h3>Lux = <span id="lux"></span></h3>
+        <h3>Soilmoisture = <span id="soilmoisture"></span></h3>
+        <button id="pumpButton"></button>
+        <button id="lightButton"></button>
+    </div> 
+   
+</body>
+</html>
